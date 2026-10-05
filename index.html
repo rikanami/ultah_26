@@ -48,7 +48,7 @@ section{min-height:100vh;display:flex;flex-direction:column;align-items:center;j
 .reveal.in{opacity:1;transform:none}
 
 /* hero */
-.polaroid{position:relative;display:inline-block;padding:12px 12px 52px;background:#fbf3ea;border-radius:4px;transform:rotate(-3deg);box-shadow:0 25px 55px rgba(0,0,0,.5);margin-bottom:2.2rem}
+.polaroid{position:relative;display:inline-block;padding:12px 12px 56px;background:#fbf3ea;border-radius:4px;transform:rotate(-3deg);box-shadow:0 25px 55px rgba(0,0,0,.5);margin-bottom:2.2rem}
 .polaroid::before{content:'';position:absolute;top:-13px;left:50%;width:84px;height:24px;transform:translateX(-50%) rotate(-4deg);background:rgba(255,111,145,.75);border-radius:2px}
 .viewport{width:min(290px,70vw);aspect-ratio:1;overflow:hidden;background:#e9d5cc;position:relative;touch-action:pan-y;cursor:grab}
 .track{display:flex;height:100%;transition:transform .55s cubic-bezier(.25,.46,.45,.94)}
@@ -56,9 +56,7 @@ section{min-height:100vh;display:flex;flex-direction:column;align-items:center;j
 .dots{position:absolute;bottom:18px;left:0;right:0;display:flex;justify-content:center;gap:7px}
 .dot{width:7px;height:7px;border-radius:50%;background:rgba(90,74,58,.3);cursor:pointer;transition:.3s}
 .dot.on{background:var(--rose);transform:scale(1.5)}
-.nav{position:absolute;top:calc(50% - 26px);width:32px;height:32px;border:0;border-radius:50%;background:rgba(255,255,255,.85);color:#5a4a3a;font-size:1.1rem;cursor:pointer;z-index:3}
-.nav.p{left:20px}.nav.n{right:20px}
-.cap{position:absolute;bottom:34px;left:0;right:0;font-family:'Great Vibes',cursive;font-size:1.5rem;color:#6a4a45}
+.cap{position:absolute;bottom:10px;left:0;right:0;font-family:'Great Vibes',cursive;font-size:1.5rem;color:#6a4a45}
 .hero-title{font-size:clamp(3.4rem,14vw,5.6rem);line-height:1;color:var(--blush);text-shadow:0 0 40px rgba(255,111,145,.5)}
 .age{display:inline-flex;align-items:baseline;gap:.5rem;margin:.6rem 0 1rem;font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--gold);font-size:1.5rem}
 .age b{font-size:3.4rem;font-weight:600;color:var(--cream);font-style:normal}
@@ -147,8 +145,6 @@ textarea:focus{border-color:var(--rose);box-shadow:0 0 0 4px rgba(255,111,145,.2
       <div class="viewport" id="vp"><div class="track" id="track">
         <img src="1.jpg" alt="Foto 1"><img src="2.jpg" alt="Foto 2"><img src="3.jpg" alt="Foto 3"><img src="4.jpg" alt="Foto 4"><img src="5.jpg" alt="Foto 5">
       </div><div class="dots" id="dots"></div></div>
-      <button class="nav p" id="prev" aria-label="Sebelumnya">‹</button>
-      <button class="nav n" id="next" aria-label="Selanjutnya">›</button>
       <div class="cap">si paling ke-26</div>
     </div>
     <h1 class="script hero-title reveal">Happy Birthday</h1>
@@ -293,8 +289,6 @@ document.querySelectorAll('.flip').forEach(f => f.addEventListener('click', e =>
   const total = track.children.length; let cur = 0, sx = 0, drag = false;
   for (let i = 0; i < total; i++){ const d = document.createElement('div'); d.className = 'dot' + (i ? '' : ' on'); d.onclick = () => go(i); dotsEl.appendChild(d); }
   function go(i){ cur = (i + total) % total; track.style.transform = `translateX(-${cur*100}%)`; [...dotsEl.children].forEach((d, k) => d.classList.toggle('on', k === cur)); }
-  document.getElementById('next').onclick = () => go(cur + 1);
-  document.getElementById('prev').onclick = () => go(cur - 1);
   const px = e => e.touches ? e.touches[0].clientX : e.clientX;
   vp.addEventListener('mousedown', e => { drag = true; sx = px(e); });
   vp.addEventListener('touchstart', e => { drag = true; sx = px(e); }, { passive: true });
