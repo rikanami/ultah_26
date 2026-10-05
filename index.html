@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday, Galina!</title>
+    <title>Happy Birthday, Sayang!</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:wght@300;400;500;600;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
         html, body {
             height: 100%;
             overflow: hidden;
-            background: #1a1b2e;
+            background: #1a0b1a;
         }
 
         body {
@@ -22,23 +22,23 @@
             position: relative;
         }
 
-        /* ================= LATAR BELAKANG ================= */
+        /* ================= LATAR BELAKANG ROMANTIS ================= */
         .bg-gradient {
             position: absolute;
             inset: 0;
             background:
-                radial-gradient(ellipse at 0% 0%, rgba(255, 154, 139, 0.35), transparent 50%),
-                radial-gradient(ellipse at 100% 100%, rgba(255, 200, 120, 0.25), transparent 50%),
-                radial-gradient(ellipse at 100% 0%, rgba(140, 130, 220, 0.3), transparent 55%),
-                radial-gradient(ellipse at 0% 100%, rgba(255, 120, 150, 0.2), transparent 55%),
-                linear-gradient(160deg, #1a1b2e 0%, #252040 45%, #1f1830 100%);
+                radial-gradient(ellipse at 0% 0%, rgba(255, 100, 130, 0.35), transparent 50%),
+                radial-gradient(ellipse at 100% 100%, rgba(255, 150, 180, 0.25), transparent 50%),
+                radial-gradient(ellipse at 100% 0%, rgba(180, 100, 200, 0.3), transparent 55%),
+                radial-gradient(ellipse at 0% 100%, rgba(255, 80, 120, 0.2), transparent 55%),
+                linear-gradient(160deg, #1a0b1a 0%, #2d1030 45%, #1f0a1f 100%);
             z-index: 1;
             animation: bgShift 20s ease-in-out infinite alternate;
         }
 
         @keyframes bgShift {
             0% { filter: hue-rotate(0deg); }
-            100% { filter: hue-rotate(15deg); }
+            100% { filter: hue-rotate(20deg); }
         }
 
         .grain {
@@ -103,13 +103,13 @@
         .badge {
             display: inline-block;
             padding: 8px 20px;
-            background: rgba(255, 154, 139, 0.15);
-            border: 1.5px solid rgba(255, 154, 139, 0.5);
+            background: rgba(255, 100, 130, 0.15);
+            border: 1.5px solid rgba(255, 100, 130, 0.5);
             border-radius: 50px;
             font-size: 0.72rem;
             letter-spacing: 3px;
             text-transform: uppercase;
-            color: #ff9a8b;
+            color: #ff8fa8;
             font-weight: 500;
             margin-bottom: 1.5rem;
             opacity: 0;
@@ -126,14 +126,14 @@
             font-size: clamp(3.5rem, 11vw, 7rem);
             line-height: 1;
             margin: 0.3rem 0;
-            background: linear-gradient(135deg, #ffb8a8 0%, #ff9a8b 30%, #ffcb8e 70%, #ffb8a8 100%);
+            background: linear-gradient(135deg, #ffb8c8 0%, #ff8fa8 30%, #ffcb8e 70%, #ffb8c8 100%);
             background-size: 200% 200%;
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
             animation: nameShift 6s ease-in-out infinite, fadeInUp 1.2s ease 0.5s both;
             letter-spacing: -2px;
-            filter: drop-shadow(0 5px 30px rgba(255, 154, 139, 0.4));
+            filter: drop-shadow(0 5px 30px rgba(255, 100, 130, 0.4));
         }
 
         @keyframes nameShift {
@@ -163,15 +163,15 @@
             font-size: 0.85rem;
             letter-spacing: 3px;
             text-transform: uppercase;
-            color: #1a1b2e;
+            color: #1a0b1a;
             font-weight: 600;
             padding: 16px 40px;
             border: none;
             border-radius: 50px;
-            background: linear-gradient(135deg, #ffb8a8 0%, #ff9a8b 50%, #ffcb8e 100%);
+            background: linear-gradient(135deg, #ffb8c8 0%, #ff8fa8 50%, #ffcb8e 100%);
             background-size: 200% 200%;
             box-shadow:
-                0 10px 30px rgba(255, 154, 139, 0.4),
+                0 10px 30px rgba(255, 100, 130, 0.4),
                 0 0 0 1px rgba(255, 255, 255, 0.1) inset;
             transition: all 0.4s ease;
             opacity: 0;
@@ -182,7 +182,7 @@
         }
 
         .open-hint::after {
-            content: '🎉';
+            content: '💖';
             margin-left: 10px;
             display: inline-block;
             animation: wave 1.5s ease-in-out infinite;
@@ -195,17 +195,17 @@
 
         @keyframes pulseBtn {
             0%, 100% {
-                box-shadow: 0 10px 30px rgba(255, 154, 139, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.1) inset;
+                box-shadow: 0 10px 30px rgba(255, 100, 130, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.1) inset;
             }
             50% {
-                box-shadow: 0 10px 40px rgba(255, 154, 139, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.2) inset;
+                box-shadow: 0 10px 40px rgba(255, 100, 130, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.2) inset;
             }
         }
 
         .open-hint:hover {
             transform: translateY(-3px) scale(1.03);
             background-position: 100% 50%;
-            box-shadow: 0 15px 45px rgba(255, 154, 139, 0.6);
+            box-shadow: 0 15px 45px rgba(255, 100, 130, 0.6);
         }
 
         /* ================= HALAMAN UTAMA ================= */
@@ -229,10 +229,10 @@
 
         .card {
             position: relative;
-            background: linear-gradient(170deg, rgba(40, 35, 65, 0.85) 0%, rgba(30, 25, 50, 0.95) 100%);
+            background: linear-gradient(170deg, rgba(45, 20, 50, 0.85) 0%, rgba(30, 12, 35, 0.95) 100%);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
-            border: 1.5px solid rgba(255, 154, 139, 0.25);
+            border: 1.5px solid rgba(255, 100, 130, 0.25);
             border-radius: 24px;
             padding: 2.5rem 2.5rem;
             max-width: 560px;
@@ -242,8 +242,8 @@
             text-align: center;
             box-shadow:
                 0 30px 80px rgba(0, 0, 0, 0.5),
-                0 0 0 1px rgba(255, 154, 139, 0.1) inset,
-                0 0 100px rgba(255, 120, 150, 0.1);
+                0 0 0 1px rgba(255, 100, 130, 0.1) inset,
+                0 0 100px rgba(255, 80, 120, 0.1);
             animation: cardSlideIn 1s cubic-bezier(0.34, 1.4, 0.64, 1) 0.4s both;
         }
 
@@ -254,14 +254,14 @@
 
         .card::-webkit-scrollbar { width: 5px; }
         .card::-webkit-scrollbar-track { background: rgba(255,255,255,0.05); border-radius: 3px; }
-        .card::-webkit-scrollbar-thumb { background: rgba(255, 154, 139, 0.4); border-radius: 3px; }
+        .card::-webkit-scrollbar-thumb { background: rgba(255, 100, 130, 0.4); border-radius: 3px; }
 
         .sticker-top {
             display: inline-block;
             font-size: 2.2rem;
             margin-bottom: 0.5rem;
             animation: floatSticker 3s ease-in-out infinite;
-            filter: drop-shadow(0 5px 15px rgba(255, 154, 139, 0.4));
+            filter: drop-shadow(0 5px 15px rgba(255, 100, 130, 0.4));
         }
 
         @keyframes floatSticker {
@@ -269,31 +269,33 @@
             50% { transform: translateY(-8px) rotate(5deg); }
         }
 
-        .polaroid-wrap {
+        /* ================= CAROUSEL FOTO (SWIPE) ================= */
+        .carousel-wrap {
             position: relative;
             display: inline-block;
             margin: 0.5rem auto 1.8rem;
-            padding: 12px 12px 40px;
+            padding: 12px 12px 45px;
             background: #faf3e8;
-            border-radius: 4px;
-            transform: rotate(-3deg);
+            border-radius: 6px;
+            transform: rotate(-2deg);
             box-shadow:
                 0 15px 35px rgba(0, 0, 0, 0.4),
                 0 5px 15px rgba(0, 0, 0, 0.3);
             transition: transform 0.5s ease;
             animation: polaroidPop 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) 0.7s both;
+            max-width: 100%;
         }
 
-        .polaroid-wrap:hover {
-            transform: rotate(2deg) scale(1.05);
+        .carousel-wrap:hover {
+            transform: rotate(1deg) scale(1.02);
         }
 
         @keyframes polaroidPop {
             0% { opacity: 0; transform: rotate(-15deg) scale(0.7); }
-            100% { opacity: 1; transform: rotate(-3deg) scale(1); }
+            100% { opacity: 1; transform: rotate(-2deg) scale(1); }
         }
 
-        .polaroid-wrap::before {
+        .carousel-wrap::before {
             content: '';
             position: absolute;
             top: -12px;
@@ -301,7 +303,7 @@
             transform: translateX(-50%) rotate(-4deg);
             width: 70px;
             height: 22px;
-            background: rgba(255, 154, 139, 0.7);
+            background: rgba(255, 100, 130, 0.7);
             background-image: repeating-linear-gradient(
                 45deg,
                 rgba(255, 255, 255, 0.2) 0px,
@@ -314,22 +316,104 @@
             z-index: 3;
         }
 
-        .polaroid-wrap img {
-            width: 170px;
-            height: 170px;
-            object-fit: cover;
-            display: block;
-            border-radius: 2px;
+        .carousel-viewport {
+            width: 280px;
+            max-width: 100%;
+            height: 280px;
+            overflow: hidden;
+            border-radius: 3px;
+            position: relative;
+            touch-action: pan-y;
+            cursor: grab;
         }
+
+        .carousel-viewport:active {
+            cursor: grabbing;
+        }
+
+        .carousel-track {
+            display: flex;
+            height: 100%;
+            transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            will-change: transform;
+        }
+
+        .carousel-track img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            flex-shrink: 0;
+            user-select: none;
+            -webkit-user-drag: none;
+            pointer-events: none;
+        }
+
+        .carousel-dots {
+            position: absolute;
+            bottom: 14px;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            gap: 7px;
+            z-index: 4;
+        }
+
+        .carousel-dots .dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: rgba(90, 74, 58, 0.35);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .carousel-dots .dot.active {
+            background: #ff6b8a;
+            transform: scale(1.4);
+            box-shadow: 0 0 8px rgba(255, 107, 138, 0.6);
+        }
+
+        .carousel-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.85);
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            color: #5a4a3a;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.2s ease;
+            z-index: 5;
+            font-weight: 700;
+        }
+
+        .carousel-wrap:hover .carousel-nav { opacity: 0.9; }
+
+        .carousel-nav:hover {
+            transform: translateY(-50%) scale(1.1);
+            background: #fff;
+        }
+
+        .carousel-nav.prev { left: 18px; }
+        .carousel-nav.next { right: 18px; }
 
         .polaroid-caption {
             position: absolute;
-            bottom: 10px;
+            bottom: 12px;
             left: 0;
             right: 0;
             text-align: center;
             font-family: 'Caveat', cursive;
-            font-size: 1.1rem;
+            font-size: 1.15rem;
             color: #5a4a3a;
             font-weight: 600;
         }
@@ -340,10 +424,10 @@
             font-size: 0.7rem;
             letter-spacing: 4px;
             text-transform: uppercase;
-            color: #ff9a8b;
+            color: #ff8fa8;
             font-weight: 500;
             padding: 6px 16px;
-            background: rgba(255, 154, 139, 0.12);
+            background: rgba(255, 100, 130, 0.12);
             border-radius: 50px;
             margin-bottom: 1rem;
         }
@@ -351,11 +435,11 @@
         .card-name {
             font-family: 'DM Serif Display', serif;
             font-size: 2.8rem;
-            color: #ffb8a8;
+            color: #ffb8c8;
             line-height: 1;
             margin-bottom: 0.4rem;
             letter-spacing: -1px;
-            text-shadow: 0 0 30px rgba(255, 154, 139, 0.3);
+            text-shadow: 0 0 30px rgba(255, 100, 130, 0.3);
         }
 
         .card-age {
@@ -370,7 +454,7 @@
             font-family: 'Poppins', sans-serif;
             font-size: 0.98rem;
             line-height: 1.8;
-            color: #d8cebd;
+            color: #e8d5d8;
             font-weight: 300;
             margin-bottom: 2rem;
             padding: 0 0.5rem;
@@ -389,8 +473,8 @@
             gap: 14px;
             align-items: flex-start;
             padding: 14px 16px;
-            background: rgba(255, 154, 139, 0.06);
-            border-left: 3px solid #ff9a8b;
+            background: rgba(255, 100, 130, 0.06);
+            border-left: 3px solid #ff8fa8;
             border-radius: 8px;
             opacity: 0;
             transform: translateY(15px);
@@ -419,7 +503,7 @@
             font-family: 'Poppins', sans-serif;
             font-size: 0.92rem;
             line-height: 1.65;
-            color: #e8e0d5;
+            color: #f0e0e5;
             font-weight: 300;
         }
 
@@ -430,7 +514,7 @@
             line-height: 1.5;
             margin: 1.5rem 0 2rem;
             padding-top: 1.5rem;
-            border-top: 1px dashed rgba(255, 154, 139, 0.3);
+            border-top: 1px dashed rgba(255, 100, 130, 0.3);
             font-weight: 500;
             opacity: 0;
             animation: prayerFadeIn 0.9s ease forwards 2.15s;
@@ -451,8 +535,8 @@
             font-size: 0.85rem;
             letter-spacing: 2px;
             text-transform: uppercase;
-            color: #1a1b2e;
-            background: linear-gradient(135deg, #ffb8a8 0%, #ff9a8b 50%, #ffcb8e 100%);
+            color: #1a0b1a;
+            background: linear-gradient(135deg, #ffb8c8 0%, #ff8fa8 50%, #ffcb8e 100%);
             background-size: 200% 200%;
             border: none;
             padding: 15px 45px;
@@ -460,13 +544,13 @@
             cursor: pointer;
             font-weight: 600;
             transition: all 0.4s ease;
-            box-shadow: 0 10px 30px rgba(255, 154, 139, 0.35);
+            box-shadow: 0 10px 30px rgba(255, 100, 130, 0.35);
         }
 
         .wish-btn:hover {
             transform: translateY(-3px) scale(1.03);
             background-position: 100% 50%;
-            box-shadow: 0 15px 40px rgba(255, 154, 139, 0.55);
+            box-shadow: 0 15px 40px rgba(255, 100, 130, 0.55);
             letter-spacing: 3px;
         }
 
@@ -509,7 +593,7 @@
             margin-top: 1.5rem;
             font-family: 'Caveat', cursive;
             font-size: 1.15rem;
-            color: #a89880;
+            color: #b898a8;
             opacity: 0;
             animation: prayerFadeIn 1s ease forwards 2.55s;
         }
@@ -520,7 +604,8 @@
             .open-hint { font-size: 0.75rem; padding: 14px 32px; letter-spacing: 2px; }
             .card { padding: 2rem 1.5rem; border-radius: 20px; }
             .card-name { font-size: 2.2rem; }
-            .polaroid-wrap img { width: 140px; height: 140px; }
+            .carousel-viewport { width: 230px; height: 230px; }
+            .carousel-nav { opacity: 0.85; }
             .prayer-text { font-size: 0.88rem; }
             .opening-message { font-size: 0.92rem; }
             .closing-message { font-size: 1.25rem; }
@@ -535,14 +620,13 @@
     <div class="particles-container" id="particlesContainer"></div>
 
     <audio id="laguUlangTahun" loop preload="auto" playsinline>
-        <source src="lagu_ultah_india.mp3" type="audio/mpeg">
-        <source src="https://raw.githubusercontent.com/rikanami/ultah/main/lagu_ultah_india.mp3" type="audio/mpeg">
+        <source src="lagu_ultah.mp3" type="audio/mpeg">
     </audio>
 
     <!-- ================= HALAMAN PEMBUKA ================= -->
     <div class="welcome-screen" id="welcomeScreen">
-        <div class="badge">🎂 Special Day 🎂</div>
-        <div class="welcome-name">Galina</div>
+        <div class="badge">💖 Special Day 💖</div>
+        <div class="welcome-name">Sayang</div>
         <div class="welcome-subtitle">ada sesuatu nih, cus buka!</div>
         <div class="open-hint" id="openBtn">Buka Sekarang</div>
     </div>
@@ -550,75 +634,87 @@
     <!-- ================= HALAMAN UTAMA ================= -->
     <div class="main-screen" id="mainScreen">
         <div class="card">
-            <div class="sticker-top">🎈</div>
+            <div class="sticker-top">💐</div>
 
-            <div class="polaroid-wrap">
-                <img src="galinasari.jpg" alt="Galina"
-                     onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/rikanami/ultah/main/galinasari.jpg';">
-                <div class="polaroid-caption">si paling ke-24 ✨</div>
+            <!-- ================= CAROUSEL FOTO ================= -->
+            <div class="carousel-wrap">
+                <div class="carousel-viewport" id="carouselViewport">
+                    <div class="carousel-track" id="carouselTrack">
+                        <img src="1.jpg" alt="Foto 1">
+                        <img src="2.jpg" alt="Foto 2">
+                        <img src="3.jpg" alt="Foto 3">
+                        <img src="4.jpg" alt="Foto 4">
+                        <img src="5.jpg" alt="Foto 5">
+                    </div>
+                </div>
+                <button class="carousel-nav prev" id="prevBtn" aria-label="Sebelumnya">‹</button>
+                <button class="carousel-nav next" id="nextBtn" aria-label="Selanjutnya">›</button>
+                <div class="carousel-dots" id="carouselDots"></div>
+                <div class="polaroid-caption">si paling ke-26 💕</div>
             </div>
 
             <div class="card-eyebrow">Happy Birthday</div>
-            <div class="card-name">Galina</div>
-            <div class="card-age">~ 24 tahun, mantap! ~</div>
+            <div class="card-name">Sayang</div>
+            <div class="card-age">~ 26 tahun, makin cantik &amp; dewasa ~</div>
 
             <div class="opening-message">
-                Selamat ulang tahun, Gal! Nggak kerasa ya, sekarang kamu udah 24.
-                Semoga tahun ini jadi tahun yang paling seru, paling tenang,
-                dan paling membahagiakan buat kamu.
+                Selamat ulang tahun, Sayang! Nggak kerasa ya, sekarang kamu udah 26.
+                Semoga tahun ini jadi tahun yang paling indah, paling tenang,
+                dan paling romantis buat kita berdua.
             </div>
 
             <div class="prayers">
                 <div class="prayer-item">
-                    <div class="prayer-emoji">💰</div>
+                    <div class="prayer-emoji">💝</div>
                     <div class="prayer-text">
                         Semoga rezekinya makin lancar, makin banyak, dan makin gampang didapat.
                         Pokoknya dompet dan hati sama-sama penuh deh.
                     </div>
                 </div>
                 <div class="prayer-item">
-                    <div class="prayer-emoji">🧘</div>
+                    <div class="prayer-emoji">🌸</div>
                     <div class="prayer-text">
                         Semoga yang bikin capek, bikin pusing, dan bikin overthinking
                         pelan-pelan pergi. Ganti jadi hari-hari yang lebih santai dan menyenangkan.
                     </div>
                 </div>
                 <div class="prayer-item">
-                    <div class="prayer-emoji">🤝</div>
+                    <div class="prayer-emoji">🤍</div>
                     <div class="prayer-text">
                         Semoga kamu selalu dikelilingi orang-orang yang beneran tulus.
                         Yang bisa diajak ketawa sampai sakit perut, dan juga yang mau dengerin
-                        kalau kamu lagi capek.
+                        kalau kamu lagi capek. Termasuk aku, selalu.
                     </div>
                 </div>
                 <div class="prayer-item">
-                    <div class="prayer-emoji">🚀</div>
+                    <div class="prayer-emoji">✨</div>
                     <div class="prayer-text">
                         Semoga setiap mimpi dan target yang kamu tulis di notes HP itu
                         satu-satu bisa dicoret karena udah tercapai. Pelan boleh, yang penting jalan terus.
                     </div>
                 </div>
                 <div class="prayer-item">
-                    <div class="prayer-emoji">💛</div>
+                    <div class="prayer-emoji">💖</div>
                     <div class="prayer-text">
                         Dan yang paling penting: semoga kamu selalu sehat, bahagia,
-                        dan jangan lupa sayang sama diri sendiri. Karena kamu berharga banget.
+                        dan jangan lupa sayang sama diri sendiri. Karena kamu berharga banget,
+                        buat aku dan buat dunia.
                     </div>
                 </div>
             </div>
 
             <div class="closing-message">
-                Sekali lagi, selamat ulang tahun, Gal!<br>
-                Terima kasih sudah jadi kamu. 🎉
+                Sekali lagi, selamat ulang tahun, Sayang!<br>
+                Terima kasih sudah jadi kamu. 💕
             </div>
 
             <!-- Tombol + Pesan Lucu -->
             <div class="action-area">
                 <button class="wish-btn" id="wishBtn">Klik Ngirim Doa</button>
-                <div class="joke-message" id="jokeMessage">Awokawok udah tua 😂</div>
+                <div class="joke-message" id="jokeMessage">Awokawok udah tua 😂💕</div>
             </div>
 
-            <div class="signature">— dari kami yang sayang kamu —</div>
+            <div class="signature">— dari aku yang paling sayang kamu —</div>
         </div>
     </div>
 
@@ -627,10 +723,10 @@
         (function createParticles() {
             const container = document.getElementById('particlesContainer');
             const colors = [
-                'radial-gradient(circle, rgba(255, 154, 139, 0.9), rgba(255, 154, 139, 0))',
+                'radial-gradient(circle, rgba(255, 100, 130, 0.9), rgba(255, 100, 130, 0))',
                 'radial-gradient(circle, rgba(255, 203, 142, 0.9), rgba(255, 203, 142, 0))',
                 'radial-gradient(circle, rgba(200, 170, 255, 0.9), rgba(200, 170, 255, 0))',
-                'radial-gradient(circle, rgba(255, 180, 200, 0.9), rgba(255, 180, 200, 0))'
+                'radial-gradient(circle, rgba(255, 150, 180, 0.9), rgba(255, 150, 180, 0))'
             ];
             for (let i = 0; i < 30; i++) {
                 const p = document.createElement('div');
@@ -666,6 +762,120 @@
 
         welcomeScreen.addEventListener('click', bukaUcapan);
 
+        // ================= CAROUSEL LOGIC =================
+        (function initCarousel() {
+            const track = document.getElementById('carouselTrack');
+            const viewport = document.getElementById('carouselViewport');
+            const dotsContainer = document.getElementById('carouselDots');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const slides = track.querySelectorAll('img');
+            const total = slides.length;
+            let current = 0;
+
+            // Buat dots
+            slides.forEach((_, i) => {
+                const dot = document.createElement('div');
+                dot.classList.add('dot');
+                if (i === 0) dot.classList.add('active');
+                dot.addEventListener('click', () => goTo(i));
+                dotsContainer.appendChild(dot);
+            });
+
+            const dots = dotsContainer.querySelectorAll('.dot');
+
+            function update() {
+                track.style.transform = `translateX(-${current * 100}%)`;
+                dots.forEach((d, i) => d.classList.toggle('active', i === current));
+            }
+
+            function goTo(index) {
+                current = (index + total) % total;
+                update();
+            }
+
+            function next() { goTo(current + 1); }
+            function prev() { goTo(current - 1); }
+
+            nextBtn.addEventListener('click', (e) => { e.stopPropagation(); next(); });
+            prevBtn.addEventListener('click', (e) => { e.stopPropagation(); prev(); });
+
+            // ===== SWIPE SUPPORT (Touch & Mouse) =====
+            let startX = 0;
+            let isDragging = false;
+            let startTranslate = 0;
+
+            function getTranslateX() {
+                const style = window.getComputedStyle(track);
+                const matrix = new DOMMatrixReadOnly(style.transform);
+                return matrix.m41;
+            }
+
+            function onStart(e) {
+                isDragging = true;
+                startX = e.type.includes('mouse') ? e.pageX : e.touches[0].clientX;
+                startTranslate = getTranslateX();
+                track.style.transition = 'none';
+            }
+
+            function onMove(e) {
+                if (!isDragging) return;
+                const x = e.type.includes('mouse') ? e.pageX : e.touches[0].clientX;
+                const diff = x - startX;
+                const viewportWidth = viewport.offsetWidth;
+                const movePercent = (diff / viewportWidth) * 100;
+                const basePercent = -(current * 100);
+                let newPercent = basePercent + movePercent;
+
+                // Batasi sedikit di ujung
+                if (newPercent > 0) newPercent = newPercent * 0.3;
+                if (newPercent < -(total - 1) * 100) {
+                    const over = newPercent + (total - 1) * 100;
+                    newPercent = -(total - 1) * 100 + over * 0.3;
+                }
+
+                track.style.transform = `translateX(${newPercent}%)`;
+                e.preventDefault();
+            }
+
+            function onEnd(e) {
+                if (!isDragging) return;
+                isDragging = false;
+                track.style.transition = 'transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
+
+                const x = e.type.includes('mouse') ? e.pageX : (e.changedTouches ? e.changedTouches[0].clientX : startX);
+                const diff = x - startX;
+                const threshold = viewport.offsetWidth * 0.18;
+
+                if (diff < -threshold) {
+                    next();
+                } else if (diff > threshold) {
+                    prev();
+                } else {
+                    update();
+                }
+            }
+
+            // Mouse events
+            viewport.addEventListener('mousedown', onStart);
+            window.addEventListener('mousemove', onMove);
+            window.addEventListener('mouseup', onEnd);
+
+            // Touch events
+            viewport.addEventListener('touchstart', onStart, { passive: true });
+            viewport.addEventListener('touchmove', onMove, { passive: false });
+            viewport.addEventListener('touchend', onEnd);
+
+            // Keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowLeft') prev();
+                if (e.key === 'ArrowRight') next();
+            });
+
+            // Resize handling
+            window.addEventListener('resize', update);
+        })();
+
         // ================= TOMBOL KIRIM DOA + JOKE =================
         const wishBtn = document.getElementById('wishBtn');
         const jokeMessage = document.getElementById('jokeMessage');
@@ -673,7 +883,7 @@
         wishBtn.addEventListener('click', function(e) {
             e.stopPropagation();
 
-            const colors = ['#ff9a8b', '#ffcb8e', '#c8aaff', '#ffb4c8', '#fff3b0'];
+            const colors = ['#ff8fa8', '#ffcb8e', '#c8aaff', '#ffb4c8', '#fff3b0'];
             for (let i = 0; i < 40; i++) {
                 const conf = document.createElement('div');
                 conf.style.position = 'fixed';
@@ -702,7 +912,7 @@
                 setTimeout(() => conf.remove(), duration * 1000 + 200);
             }
 
-            wishBtn.textContent = 'Terkirim! 🎉';
+            wishBtn.textContent = 'Terkirim! 💖';
             wishBtn.disabled = true;
 
             setTimeout(() => {
